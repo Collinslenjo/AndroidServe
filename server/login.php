@@ -5,3 +5,12 @@ require_once('db.php');
 
 $email = $_POST['email'];
 $password = $_POST['password'];
+
+$stmt = $db_conn->prepare("SELECT * FROM users WHERE email='$email' AND password='$password'");
+
+if(!$row = $stmt->fetch_assoc())
+{
+	echo "Your email or password is incorrect!";
+} else {
+	$_SESSION['id'] = $row['id'];
+}
