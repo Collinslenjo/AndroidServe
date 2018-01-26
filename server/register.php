@@ -1,7 +1,7 @@
 <?php
+session_start();
 require_once('db.php');
 // register activity
-
 $username = $_POST['username'];
 $email = $_POST['email'];
 $phoneNumber = $_POST['phoneNumber'];
