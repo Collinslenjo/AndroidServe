@@ -2,6 +2,8 @@ package com.example.collins.loginregister;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class ReigsterActivity extends AppCompatActivity {
 
